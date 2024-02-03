@@ -4,7 +4,7 @@
 
 ## Description
 
-A server for file uploading using Nestjs to Cloudinary
+File uploader to Cloudinary using Nestjs
 
 ## Installation
 

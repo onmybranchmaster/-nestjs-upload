@@ -21,4 +21,8 @@ export class UploadService {
       streamifier.createReadStream(file.buffer).pipe(upload);
     });
   }
+
+  uploadMultipleFiles(files: Express.Multer.File[]): Promise<UploadResponse[]> {
+    return Promise.all(files.map((file) => this.uploadFile(file)));
+  }
 }
